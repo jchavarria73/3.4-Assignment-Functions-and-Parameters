@@ -3,9 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>3.4 Assignment</title>
 </head>
 <body>
+    <h2>Function Return</h2>
+    <p id="function"></p>
+
+    <script>
+    let x = myFunction(10, 6);
+    document.getElementById("function").innerHTML = x;
     
+    function myFunction(a, b) {
+      return a * b;
+    }
+    </script>
+
+    <h2>Function: Fahrenheit to Celsius</h2>
+    <p id="celsius"></p>
+
+    <script>
+    function toCelsius(f) {
+      return (5/9) * (f-32);
+    }
+        
+    let value = toCelsius(122);
+    document.getElementById("celsius").innerHTML = value;
+    </script>
+
+    <h2>Object Properties</h2>
+    <p id="object"></p>
+
+    <script>
+    const person = {        
+      firstName: "Jose",
+      lastName: "Chavarria",
+      age: 21,
+      eyeColor: "brown"
+    };
+    
+    document.getElementById("object").innerHTML =
+    person.firstName + " " + person.lastName;
+    </script>
+    
+    <h2>Event</h2>
+    <button onclick="displayDate()">What is today's date?</button>
+    <p id="event"></p>
+
+    <script>
+    function displayDate() {
+      document.getElementById("event").innerHTML = Date();
+    }
+    </script>
+
+    <h2>Replace Method</h2>
+    <button onclick="myFunction()">Replace Color to Blue</button>
+    <p id="method">My favorite color is red</p>
+
+    <script>
+    function myFunction() {
+      let text = document.getElementById("method").innerHTML;
+      document.getElementById("method").innerHTML =
+      text.replace("red","blue");
+    }
+    </script>
+
+    <script src="./app.js"></script>  
 </body>
 </html>
