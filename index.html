@@ -7,65 +7,34 @@
 </head>
 <body>
     <h2>Function Return</h2>
+    <p>10 * 6 =</p>
     <p id="function"></p>
-
-    <script>
-    let x = myFunction(10, 6);
-    document.getElementById("function").innerHTML = x;
-    
-    function myFunction(a, b) {
-      return a * b;
-    }
-    </script>
-
-    <h2>Function: Fahrenheit to Celsius</h2>
-    <p id="celsius"></p>
-
-    <script>
-    function toCelsius(f) {
-      return (5/9) * (f-32);
-    }
-        
-    let value = toCelsius(122);
-    document.getElementById("celsius").innerHTML = value;
-    </script>
 
     <h2>Object Properties</h2>
     <p id="object"></p>
 
-    <script>
-    const person = {        
-      firstName: "Jose",
-      lastName: "Chavarria",
-      age: 21,
-      eyeColor: "brown"
-    };
-    
-    document.getElementById("object").innerHTML =
-    person.firstName + " " + person.lastName;
-    </script>
-    
-    <h2>Event</h2>
-    <button onclick="displayDate()">What is today's date?</button>
-    <p id="event"></p>
+    <h2>Object Method</h2>
+    <p id="method"></p>
 
-    <script>
-    function displayDate() {
-      document.getElementById("event").innerHTML = Date();
-    }
-    </script>
+    <h2>onclick Event</h2>
+    <p id="event">Why did the chicken cross the playground?</p>
+    <button id="onclick" onclick="clickFunction()">Answer</button>
+
+    <h2>Event (Date)</h2>
+    <button onclick="displayDate()">What is today's date?</button>
+    <p id="date"></p>
+
+    <h2>Length Method</h2>
+    <p>The length of this string "Pepperoni Pizza" is:</p>
+    <p id="length"></p>
 
     <h2>Replace Method</h2>
     <button onclick="myFunction()">Replace Color to Blue</button>
-    <p id="method">My favorite color is red</p>
+    <p id="replace">My favorite color is red</p>
 
-    <script>
-    function myFunction() {
-      let text = document.getElementById("method").innerHTML;
-      document.getElementById("method").innerHTML =
-      text.replace("red","blue");
-    }
-    </script>
+    <h2>Number.isInteger() Method</h2>
+    <p>5 is an integer.</p>
+    <p id="integer"></p>
 
     <script src="./app.js"></script>  
 </body>
