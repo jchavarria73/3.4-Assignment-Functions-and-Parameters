@@ -5,15 +5,15 @@ function multiply(x, y) {
   return x * y; // Function Return
 }
 
-function adder(num1, num2){
-    console.log(num1 + num2);
+function adder(num1, num2) {
+  console.log(num1 + num2);
 }
 
 adder(10,8); // Passing Parameters In, Output: 18
 
 function add(a, b) {
-    return a + b;
-  }
+  return a + b;
+}
   
   const sum = add(8, 4); // Passing Parameters Out
   console.log(sum); // Output: 12
